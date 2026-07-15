@@ -1,2 +1,9 @@
-# Abandoned-Developer-Project-Finder
-A platform where developers can list abandoned projects and others can discover, claim, and continue working on them.
+A fully responsive personal portfolio website using only
+
+HTML5
+CSS3
+JavaScript (Vanilla)
+
+No Bootstrap.
+No React.
+No Tailwind.
