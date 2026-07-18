@@ -615,4 +615,52 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  align-items: stretch;
+}
+
+.card h3 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 2rem;
+  color: var(--clr-primary);
+}
+
+.card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9rem;
+}
+
+.card li {
+  padding: .65rem 1rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(85, 248, 255, .12);
+  transition: var(--transition);
+}
+
+.card li:hover {
+  transform: translateY(-3px);
+  border-color: var(--clr-primary);
+  background: rgba(85, 248, 255, .08);
+  box-shadow: 0 0 18px rgba(85, 248, 255, .15);
+}
+
+#skills {
+  position: relative;
+  overflow: hidden;
+}
+
+#skills::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -250px;
+  bottom: -200px;
+  border-radius: 50%;
+  background: radial-gradient(rgba(85, 248, 255, .08), transparent 70%);
+  filter: blur(90px);
 }
